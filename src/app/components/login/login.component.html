@@ -1,0 +1,19 @@
+<p>
+  login works!
+</p>
+
+<div class="container">
+  <div class="row d-flex">
+    <section>
+
+      <button (click)="loginWithGoogle()" type="button" class="btn btn-primary"
+              tooltip="Login with google">
+        Login with Google
+      </button>
+      <button (click)="logout()">Logout</button>
+      <button (click)="sub()">test</button>
+
+      <p>User: {{ user?.providerData | json }}</p>
+    </section>
+  </div>
+</div>
